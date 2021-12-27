@@ -177,6 +177,8 @@ for (i = 0; i < length; ++i) {
   }
 }
 
+const processNormal=require("../lib/normal/generateNormals")
+
 const options = {
   resourceDirectory: inputDirectory,
   separate: argv.separate,
@@ -185,6 +187,7 @@ const options = {
   keepUnusedElements: argv.keepUnusedElements,
   name: outputName,
   dracoOptions: dracoOptions,
+  customStages: processNormal
 };
 
 const inputIsBinary = inputExtension === ".glb";
