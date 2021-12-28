@@ -1,0 +1,1 @@
+node bin/gltf-pipeline.js -i ./nonormal/NewProject.gltf -o ./nonormal/test.glb
