@@ -20,33 +20,19 @@ Supports common operations including:
 
 ## Getting Started
 
-Install [Node.js](https://nodejs.org/en/) if you don't already have it, and then:
-
-```
-npm install -g gltf-pipeline
-```
 
 ### Using gltf-pipeline as a command-line tool:
 
-#### Converting a glTF to glb
+#### generating normals
 
-`gltf-pipeline -i model.gltf -o model.glb`
+`node bin/gltf-pipeline.js -i ./nonormal/NewProject.gltf -o ./nonormal/test.gltf`
 
-`gltf-pipeline -i model.gltf -b`
 
-#### Converting a glb to glTF
+#### Converting a glTF to glb after generating normals
 
-`gltf-pipeline -i model.glb -o model.gltf`
+`node bin/gltf-pipeline.js -i ./nonormal/NewProject.gltf -o ./nonormal/test.glb`
 
-`gltf-pipeline -i model.glb -j`
 
-#### Converting a glTF to Draco glTF
-
-`gltf-pipeline -i model.gltf -o modelDraco.gltf -d`
-
-### Saving separate textures
-
-`gltf-pipeline -i model.gltf -t`
 
 ### Using gltf-pipeline as a library:
 
